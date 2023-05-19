@@ -1,4 +1,4 @@
-package com.yearup;
+package com.yearup.dealership;
 
 import java.util.Scanner;
 import java.util.List;
@@ -26,6 +26,7 @@ public class UserInterface {
             System.out.println("7. Get all vehicles");
             System.out.println("8. Add vehicle");
             System.out.println("9. Remove vehicle");
+            System.out.println("10. ");
             System.out.println("99. Quit");
 
             System.out.print("Enter your choice: ");

@@ -1,4 +1,4 @@
-package com.yearup;
+package com.yearup.dealership;
 
 import java.util.ArrayList;
 import java.util.List;
