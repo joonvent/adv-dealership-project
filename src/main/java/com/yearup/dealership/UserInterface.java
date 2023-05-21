@@ -1,5 +1,6 @@
 package com.yearup.dealership;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.List;
 
@@ -7,6 +8,8 @@ public class UserInterface {
 
     private Dealership dealership;
     private Scanner scanner;
+    private ContractDataManager contractDataManager;
+
 
     public UserInterface() {
         scanner = new Scanner(System.in);
@@ -62,7 +65,7 @@ public class UserInterface {
                     break;
 
                 case "10":
-                    proccessNewContract();
+                    proccessNewContract(contractDataManager);
                     break;
                 case "99":
                     quit = true;
@@ -199,7 +202,7 @@ public class UserInterface {
         }
     }
 
-    private void proccessNewContract(){
+    private void proccessNewContract(contractDataManager) throws FileNotFoundException {
         System.out.println("Would you Like to Lease or Sell A Vehicle?");
         String response = scanner.nextLine();
 
@@ -222,7 +225,7 @@ public class UserInterface {
             System.out.println("Please enter vehicle model: ");
             String model = scanner.nextLine();
 
-            System.out.println("Please enter vehicle type: ");
+            System.out.println("Please enter vehicle type(Car, Truck, SUV, Motorcycle): ");
             String vehicleType = scanner.nextLine();
 
             System.out.println("Please enter vehicle color: ");
@@ -233,6 +236,10 @@ public class UserInterface {
 
             System.out.println("Please enter vehicle vehicle price: ");
             double price = scanner.nextDouble();
+            scanner.nextLine();
+
+            LeaseContract  leaseContract = new LeaseContract(date , name , email , vin , make , model , vehicleType , vehicleColor , odometerReading , price);
+            contractDataManager.saveContract(leaseContract);
         }
 
         else if (response.equalsIgnoreCase("sell")){
@@ -258,7 +265,7 @@ public class UserInterface {
             System.out.println("Please enter vehicle model: ");
             String model = scanner.nextLine();
 
-            System.out.println("Please enter vehicle type: ");
+            System.out.println("Please enter vehicle type(Car, Truck, SUV, Motorcycle): ");
             String vehicleType = scanner.nextLine();
 
             System.out.println("Please enter vehicle color: ");

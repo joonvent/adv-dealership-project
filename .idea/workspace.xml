@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44fac775-4ba7-4c45-a99b-400bbebe943d" name="Changes" comment="2nd Commit">
+    <list default="true" id="44fac775-4ba7-4c45-a99b-400bbebe943d" name="Changes" comment="user interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ContractDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ContractDataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/LeaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/LeaseContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/SalesContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/SalesContract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,12 +82,20 @@
       <option name="project" value="LOCAL" />
       <updated>1684519509755</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="user interface">
+      <created>1684656478336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684656478336</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="2nd Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd Commit" />
+    <MESSAGE value="user interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="user interface" />
   </component>
 </project>
