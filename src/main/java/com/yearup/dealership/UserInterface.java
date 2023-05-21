@@ -26,7 +26,7 @@ public class UserInterface {
             System.out.println("7. Get all vehicles");
             System.out.println("8. Add vehicle");
             System.out.println("9. Remove vehicle");
-            System.out.println("10. ");
+            System.out.println("10. Sell/Lease vehicle");
             System.out.println("99. Quit");
 
             System.out.print("Enter your choice: ");
@@ -59,6 +59,10 @@ public class UserInterface {
                     break;
                 case "9":
                     processRemoveVehicleRequest();
+                    break;
+
+                case "10":
+                    proccessNewContract();
                     break;
                 case "99":
                     quit = true;
@@ -193,6 +197,93 @@ public class UserInterface {
         for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle.toString());
         }
+    }
+
+    private void proccessNewContract(){
+        System.out.println("Would you Like to Lease or Sell A Vehicle?");
+        String response = scanner.nextLine();
+
+        if (response.equalsIgnoreCase("lease")){
+            System.out.println("Please enter date: ");
+            String date = scanner.nextLine();
+
+            System.out.println("Please enter your name(Firstname Lastname): ");
+            String name = scanner.nextLine();
+
+            System.out.println("Please enter your email address: ");
+            String email = scanner.nextLine();
+
+            System.out.println("Please enter the car VIN: ");
+            int vin = scanner.nextInt();
+
+            System.out.println("Please enter vehicle make: ");
+            String make = scanner.nextLine();
+
+            System.out.println("Please enter vehicle model: ");
+            String model = scanner.nextLine();
+
+            System.out.println("Please enter vehicle type: ");
+            String vehicleType = scanner.nextLine();
+
+            System.out.println("Please enter vehicle color: ");
+            String vehicleColor = scanner.nextLine();
+
+            System.out.println("Please enter vehicle mileage: ");
+            int odometerReading = scanner.nextInt();
+
+            System.out.println("Please enter vehicle vehicle price: ");
+            double price = scanner.nextDouble();
+        }
+
+        else if (response.equalsIgnoreCase("sell")){
+            System.out.println("Please enter date: ");
+            String dateOfContract = scanner.nextLine();
+
+            System.out.println("Please enter your name(Firstname Lastname): ");
+            String customerName = scanner.nextLine();
+
+            System.out.println("Please enter your email address: ");
+            String customerEmail = scanner.nextLine();
+
+            System.out.println("Please enter the car VIN: ");
+            int vin = scanner.nextInt();
+            scanner.nextLine();
+
+            System.out.println("Please enter vehicle year: ");
+            String year = scanner.nextLine();
+
+            System.out.println("Please enter vehicle make: ");
+            String make = scanner.nextLine();
+
+            System.out.println("Please enter vehicle model: ");
+            String model = scanner.nextLine();
+
+            System.out.println("Please enter vehicle type: ");
+            String vehicleType = scanner.nextLine();
+
+            System.out.println("Please enter vehicle color: ");
+            String color = scanner.nextLine();
+
+            System.out.println("Please enter vehicle mileage: ");
+            int odometer = scanner.nextInt();
+            scanner.nextLine();
+
+            System.out.println("Please enter vehicle vehicle price: ");
+            double price = scanner.nextDouble();
+            scanner.nextLine();
+
+            System.out.println("Please enter");
+
+
+
+        }else{
+            return;
+
+        }
+
+
+
+
     }
 
 }

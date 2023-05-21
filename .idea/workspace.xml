@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44fac775-4ba7-4c45-a99b-400bbebe943d" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dealership.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ContractDataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/LeaseContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/SalesContract.java" afterDir="false" />
+    <list default="true" id="44fac775-4ba7-4c45-a99b-400bbebe943d" name="Changes" comment="2nd Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/CarDealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/CarDealership.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Dealership.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/DealershipFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/DealershipFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ContractDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ContractDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/LeaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/LeaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/SalesContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/SalesContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +79,19 @@
       <option name="project" value="LOCAL" />
       <updated>1684433378023</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2nd Commit">
+      <created>1684519509755</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684519509755</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="2nd Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd Commit" />
   </component>
 </project>

@@ -16,7 +16,7 @@ public class LeaseContract extends Contract {
     }
 
     public void setExpectedEndingValue(double expectedEndingValue) {
-        this.expectedEndingValue = expectedEndingValue;
+        this.expectedEndingValue =expectedEndingValue;
     }
 
     public double getLeaseFee() {

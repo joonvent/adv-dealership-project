@@ -4,9 +4,40 @@ public class SalesContract extends Contract {
 
     private double salesTaxAmount;
     private double recordingFee;
-
     private int processingFee;
     private boolean financeOption;
+
+    public double getSalesTaxAmount() {
+        return salesTaxAmount;
+    }
+
+    public void setSalesTaxAmount(double salesTaxAmount) {
+        this.salesTaxAmount = salesTaxAmount;
+    }
+
+    public double getRecordingFee() {
+        return recordingFee;
+    }
+
+    public void setRecordingFee(double recordingFee) {
+        this.recordingFee = recordingFee;
+    }
+
+    public int getProcessingFee() {
+        return processingFee;
+    }
+
+    public void setProcessingFee(int processingFee) {
+        this.processingFee = processingFee;
+    }
+
+    public boolean isFinanceOption() {
+        return financeOption;
+    }
+
+    public void setFinanceOption(boolean financeOption) {
+        this.financeOption = financeOption;
+    }
 
     public SalesContract(String dateOfContract, String customerName, String customerEmail, Vehicle vehicleSold, double salesTaxAmount, double recordingFee, int processingFee, boolean financeOption) {
         super(dateOfContract, customerName, customerEmail, vehicleSold);
