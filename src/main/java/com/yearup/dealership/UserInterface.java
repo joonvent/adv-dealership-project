@@ -9,10 +9,12 @@ public class UserInterface {
     private Dealership dealership;
     private Scanner scanner;
     private ContractDataManager contractDataManager;
+    private DealershipFileManager dealershipFileManager;
 
 
     public UserInterface() {
         scanner = new Scanner(System.in);
+        contractDataManager = new ContractDataManager();
     }
 
     public void display() {
@@ -202,43 +204,57 @@ public class UserInterface {
         }
     }
 
-    private void proccessNewContract(contractDataManager) throws FileNotFoundException {
-        System.out.println("Would you Like to Lease or Sell A Vehicle?");
+    private void proccessNewContract(ContractDataManager contractDataManager , LeaseContract leaseContract) throws FileNotFoundException {
+        System.out.print("Would you Like to Lease or Sell A Vehicle?");
         String response = scanner.nextLine();
 
         if (response.equalsIgnoreCase("lease")){
-            System.out.println("Please enter date: ");
+            System.out.print("Please enter date: ");
             String date = scanner.nextLine();
 
-            System.out.println("Please enter your name(Firstname Lastname): ");
+            System.out.print("Please enter your name(Firstname Lastname): ");
             String name = scanner.nextLine();
 
-            System.out.println("Please enter your email address: ");
+            System.out.print("Please enter your email address: ");
             String email = scanner.nextLine();
 
-            System.out.println("Please enter the car VIN: ");
+            System.out.print("Please enter the car VIN: ");
             int vin = scanner.nextInt();
+            scanner.nextLine();
 
-            System.out.println("Please enter vehicle make: ");
+            System.out.print("Please enter vehicle make: ");
             String make = scanner.nextLine();
 
-            System.out.println("Please enter vehicle model: ");
+            System.out.print("Please enter vehicle model: ");
             String model = scanner.nextLine();
 
-            System.out.println("Please enter vehicle type(Car, Truck, SUV, Motorcycle): ");
+            System.out.print("Please enter vehicle type(Car, Truck, SUV, Motorcycle): ");
             String vehicleType = scanner.nextLine();
 
-            System.out.println("Please enter vehicle color: ");
+            System.out.print("Please enter vehicle color: ");
             String vehicleColor = scanner.nextLine();
 
-            System.out.println("Please enter vehicle mileage: ");
+            System.out.print("Please enter vehicle mileage: ");
             int odometerReading = scanner.nextInt();
 
-            System.out.println("Please enter vehicle vehicle price: ");
+            System.out.print("Please enter vehicle vehicle price: ");
             double price = scanner.nextDouble();
             scanner.nextLine();
 
-            LeaseContract  leaseContract = new LeaseContract(date , name , email , vin , make , model , vehicleType , vehicleColor , odometerReading , price);
+            System.out.print("Please enter expected ending value: ");
+            double expectedEndingValue = scanner.nextDouble();
+            scanner.nextLine();
+
+            System.out.print("Lease Fee");
+            double leaseFee = scanner.nextDouble();
+            scanner.nextLine();
+
+
+            LeaseContract  leaseContract = new LeaseContract(date , name , email , vin , make , model, vehicleType , vehicleColor , odometerReading , price , expectedEndingValue , leaseFee,  );
+
+            double monthlyPayment = leaseContract.getMonthlyPayment();
+            System.out.print("Your monthly payment: " + monthlyPayment);
+
             contractDataManager.saveContract(leaseContract);
         }
 
